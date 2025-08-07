@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Enterprise theme colors
+				'header-bg': 'hsl(var(--header-bg))',
+				'nav-bg': 'hsl(var(--nav-bg))',
+				'service-card': 'hsl(var(--service-card))',
+				'service-card-hover': 'hsl(var(--service-card-hover))',
+				'enterprise-blue': 'hsl(var(--enterprise-blue))',
+				'enterprise-blue-light': 'hsl(var(--enterprise-blue-light))',
+				'enterprise-gray': 'hsl(var(--enterprise-gray))',
+				'enterprise-gray-light': 'hsl(var(--enterprise-gray-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +76,14 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-header': 'var(--gradient-header)',
+				'gradient-card': 'var(--gradient-card)',
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'card-hover': 'var(--shadow-card-hover)',
 			},
 			keyframes: {
 				'accordion-down': {
