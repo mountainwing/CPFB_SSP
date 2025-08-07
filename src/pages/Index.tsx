@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import ServiceCard from "@/components/ServiceCard";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
+import ChatBot from "@/components/ChatBot";
 import { 
   Database, 
   BarChart3, 
@@ -102,6 +103,8 @@ const Index = () => {
           ))}
         </div>
       </main>
+      
+      <ChatBot />
     </div>
   );
 };
