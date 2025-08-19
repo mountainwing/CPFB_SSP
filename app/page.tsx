@@ -1,7 +1,8 @@
-import { Bell, Settings, Calendar, Database, BarChart3, Search, FileText, Info } from "lucide-react"
+import { Bell, Settings, Calendar, Database, BarChart3, Search, FileText, Info, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function Dashboard() {
   return (
@@ -10,7 +11,7 @@ export default function Dashboard() {
       <header className="bg-slate-700 text-white px-6 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-semibold">SSP Data Platform</h1>
+            <h1 className="text-xl font-semibold">SSP Community Platform</h1>
             <p className="text-sm text-slate-300">Shared dashboard | Read-only access</p>
           </div>
           <div className="flex items-center gap-4">
@@ -20,8 +21,16 @@ export default function Dashboard() {
             <Button variant="ghost" size="icon" className="text-white hover:bg-slate-600">
               <Settings className="h-5 w-5" />
             </Button>
-            <div className="w-8 h-8 bg-slate-500 rounded-full flex items-center justify-center">
-              <span className="text-sm font-medium">U</span>
+            <div className="flex items-center gap-2 text-white">
+              <Avatar className="w-8 h-8">
+                <AvatarImage src="/generic-user-avatar.png" />
+                <AvatarFallback>BH</AvatarFallback>
+              </Avatar>
+              <div className="text-sm">
+                <div className="font-medium">Beh Hoa Wing</div>
+                <div className="text-xs text-gray-400">PRO Account</div>
+              </div>
+              <ChevronDown className="w-4 h-4 text-gray-400" />
             </div>
           </div>
         </div>
@@ -108,6 +117,22 @@ export default function Dashboard() {
             <p className="text-gray-600">Access your enterprise analytics and data management tools</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* card for CPFBCommunityRepo */}
+            <Card className="hover:shadow-md transition-shadow">
+              <CardHeader className="text-center pb-4">
+                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Database className="h-6 w-6 text-blue-600" />
+                </div>
+                <CardTitle className="text-lg">CPFBCommunityRepo</CardTitle>
+                <CardDescription className="text-sm">
+                  Community repository to share, learn and grow together
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <Link href="/CommunityRepo"><Button className="w-full bg-blue-600 hover:bg-blue-700">Launch</Button></Link>
+              </CardContent>
+            </Card>
+
             <Card className="hover:shadow-md transition-shadow">
               <CardHeader className="text-center pb-4">
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
