@@ -6,7 +6,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   icon: LucideIcon;
-  onClick?: () => void;
+  onClick: () => void;
   disabled?: boolean;
 }
 

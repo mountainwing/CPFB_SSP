@@ -1,6 +1,6 @@
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Info, X } from "lucide-react";
+import { Info } from "lucide-react";
 import { useState } from "react";
 
 const AnnouncementBanner = () => {
@@ -38,7 +38,6 @@ const AnnouncementBanner = () => {
         className="absolute right-4 top-4 h-8 w-8 text-enterprise-blue hover:bg-enterprise-blue hover:text-white rounded-full"
         onClick={() => setIsVisible(false)}
       >
-        <X className="h-5 w-5" />
       </Button>
     </Alert>
   );

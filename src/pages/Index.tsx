@@ -1,6 +1,7 @@
-import Header from "@/components/Header";
+import Header from "@/components/headers/HomeHeader";
 import ServiceCard from "@/components/ServiceCard";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
+import EventsSection from "@/components/EventsSection";
 import ChatBot from "@/components/ChatBot";
 import { 
   Database, 
@@ -13,6 +14,7 @@ import {
   PieChart
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const { toast } = useToast();
@@ -24,7 +26,18 @@ const Index = () => {
     });
   };
 
+  const navigate = useNavigate();
+
   const services = [
+    {
+      title: "CPFBCodeCommunity",
+      description: "Share, learn, and grow together",
+      icon: Database,
+      onClick: () => {
+        handleServiceClick("CPFBCodeCommunity");
+        navigate("/CommunityRepo");
+      }
+    },
     {
       title: "Databricks Workspace",
       description: "Unified analytics platform for big data and machine learning workloads",
@@ -82,7 +95,9 @@ const Index = () => {
       <main className="container mx-auto px-6 py-8">
         <AnnouncementBanner />
         
-        <div className="mb-8">
+        <EventsSection />
+        
+        <div className="my-8">
           <h2 className="text-3xl font-bold text-foreground mb-2">
             Data Services Dashboard
           </h2>

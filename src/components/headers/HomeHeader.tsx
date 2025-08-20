@@ -15,8 +15,8 @@ const Header = () => {
       <div className="flex items-center justify-between px-6 py-4">
         <div className="flex items-center space-x-4">
           <div className="text-white">
-            <h1 className="text-xl font-semibold">Data Platform</h1>
-            <p className="text-sm text-enterprise-blue-light">Enterprise Analytics Hub</p>
+            <h1 className="text-xl font-semibold">SSP Data Platform</h1>
+            <p className="text-sm text-enterprise-blue-light">Shared dashboard | Read-only access</p>
           </div>
         </div>
         
@@ -39,8 +39,8 @@ const Header = () => {
                   </AvatarFallback>
                 </Avatar>
                 <div className="text-left hidden md:block">
-                  <p className="text-sm font-medium">Business User</p>
-                  <p className="text-xs text-enterprise-blue-light">PRO Account</p>
+                  <p className="text-sm font-medium">Beh Hoa Wing</p>
+                  <p className="text-xs text-enterprise-blue-light">PROD Account</p>
                 </div>
                 <ChevronDown className="h-4 w-4" />
               </Button>
