@@ -2,6 +2,7 @@ import { Search, Filter, Plus, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import CodeInputPopup from "../ShareCode"
 
 const languages = [
   { name: "JavaScript", active: true },
@@ -50,10 +51,7 @@ export function CodeCommunityHeader() {
               <Filter className="w-4 h-4 mr-2" />
               Filter
             </Button>
-            <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
-              <Plus className="w-4 h-4 mr-2" />
-              Share Code
-            </Button>
+            <CodeInputPopup />
             <div className="flex items-center gap-2 text-white">
               <Avatar className="w-8 h-8">
                 <AvatarImage src="/generic-user-avatar.png" />
