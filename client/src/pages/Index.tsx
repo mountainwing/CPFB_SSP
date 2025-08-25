@@ -54,7 +54,10 @@ const Index = () => {
       title: "Purview Data Catalog",
       description: "Data governance and cataloging service for your organization",
       icon: Search,
-      onClick: () => handleServiceClick("Purview"),
+      onClick: () => {
+        handleServiceClick("Purview");
+        navigate("/Search");
+      },
     },
     {
       title: "Data Readiness",
