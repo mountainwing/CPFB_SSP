@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 8080;
 // allow only the react app's origin in production
 app.use(cors({ origin: ["http://localhost:8080"] }));
 
-// Mount under a common prefix
+app.use(express.json());
+app.use(express.text({ type: "text/*" }));
 app.use("/api", uploadRoutes);
 
 app.listen(PORT, () => {

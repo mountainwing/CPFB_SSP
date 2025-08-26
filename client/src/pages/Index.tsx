@@ -34,7 +34,6 @@ const Index = () => {
       description: "Share, learn, and grow together",
       icon: Database,
       onClick: () => {
-        handleServiceClick("CPFBCodeCommunity");
         navigate("/CommunityRepo");
       }
     },
@@ -42,20 +41,17 @@ const Index = () => {
       title: "Databricks Workspace",
       description: "Unified analytics platform for big data and machine learning workloads",
       icon: Database,
-      onClick: () => handleServiceClick("Databricks"),
     },
     {
       title: "Power BI",
       description: "Business analytics solution for data visualization and insights",
       icon: BarChart3,
-      onClick: () => handleServiceClick("Power BI"),
     },
     {
       title: "Purview Data Catalog",
       description: "Data governance and cataloging service for your organization",
       icon: Search,
       onClick: () => {
-        handleServiceClick("Purview");
         navigate("/Search");
       },
     },
@@ -63,31 +59,26 @@ const Index = () => {
       title: "Data Readiness",
       description: "Check data quality and preparation status for analytics",
       icon: FileText,
-      onClick: () => handleServiceClick("Data Readiness"),
     },
     {
       title: "Ask DAVE",
       description: "AI-powered data assistant for intelligent query processing",
       icon: Bot,
-      onClick: () => handleServiceClick("DAVE"),
     },
     {
       title: "Data Enhancements",
       description: "Tools for data cleansing, transformation, and enrichment",
       icon: PieChart,
-      onClick: () => handleServiceClick("Data Enhancements"),
     },
     {
       title: "Neo4j Browser",
       description: "Graph database development and visualization interface",
       icon: Network,
-      onClick: () => handleServiceClick("Neo4j Browser"),
     },
     {
       title: "Neo4j Bloom",
       description: "Graph data visualization and exploration tool",
       icon: Flower2,
-      onClick: () => handleServiceClick("Neo4j Bloom"),
     },
   ];
 
